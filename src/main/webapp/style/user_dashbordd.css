@@ -1,0 +1,85 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+    display: flex;
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    background: #1e3a5f;
+    color: white;
+    padding-top: 20px;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to left */
+    padding-left: 15px; /* Added some padding */
+}
+
+/* Sidebar Links */
+.sidebar .nav-links {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .nav-links a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    text-align: left;
+    width: calc(100% - 30px); /* Adjusted width for better alignment */
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.sidebar .nav-links a:hover {
+    background: #374a6e;
+    padding-left: 25px; /* Smooth slide effect */
+    transition: 0.3s;
+}
+
+/* Main Content Styling */
+.main-content {
+    margin-left: 250px; /* Same as sidebar width */
+    padding: 20px;
+    text-align: center;
+    width: calc(100% - 250px);
+}
+
+/* Community Options */
+.options-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.option-box {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.option-box:hover {
+    transform: scale(1.08);
+}
+
+.option-box h3 {
+    margin: 0 0 12px;
+}
+
+.option-box p {
+    color: #555;
+}
